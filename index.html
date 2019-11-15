@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Webmap</title>
@@ -42,6 +42,12 @@
 
       
     </style>
+
+    <link href="assets/icon.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>SEBLINYO Webmap</title>
 </head>
 
 <body>
@@ -49,6 +55,7 @@
     <video width='540' height='360' autoplay loop muted>
         <source src='output.mp4' type="video/mp4">
     </video>
+
     
     <div id="static">
         <img src="pics/frame0.png">
@@ -57,6 +64,43 @@
         <img src="pics/frame360.png">
     </div>
 
+    <!--<video width='720' height='540' autoplay loop muted>
+        <source src='output1.mp4' type="video/mp4">
+    </video>
+    <video width='720' height='540' autoplay loop muted>
+        <source src='output2.mp4' type="video/mp4">
+    </video>
+    <video width='720' height='540' autoplay loop muted>
+        <source src='output3.mp4' type="video/mp4">
+    </video> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLongTitle">Welcome</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
