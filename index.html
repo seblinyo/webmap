@@ -9,7 +9,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Webmap</title>
     <style>
+        body {
+            background-color: whitesmoke;
+        }
+
         h1 {
+            padding: 0;
             width: 80%;
             text-align: center;
             margin: 10px auto 10px auto;
@@ -21,16 +26,28 @@
             text-align: center;
             width: 100%;
             margin: 10px auto 10px auto;
+            background-color: whitesmoke;
+        }
+
+        #footer {
+            border: 1px solid black;
+            background-color: #333;
+            width: 100%;
+            height: 20px;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+        
         }
     </style>
 </head>
 
 <body>
     <h1>Schladming, Austria</h1>
-    <video width='720' height='540' autoplay loop muted>
+    <video width='540' height='360' autoplay loop muted>
         <source src='output.mp4' type="video/mp4">
     </video>
-    <video width='720' height='540' autoplay loop muted>
+    <!--<video width='720' height='540' autoplay loop muted>
         <source src='output1.mp4' type="video/mp4">
     </video>
     <video width='720' height='540' autoplay loop muted>
@@ -38,7 +55,8 @@
     </video>
     <video width='720' height='540' autoplay loop muted>
         <source src='output3.mp4' type="video/mp4">
-    </video>
+    </video> -->
+    <div id="footer"></div>
 
 </body>
 
