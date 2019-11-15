@@ -1,4 +1,4 @@
-body, button>.btn-secondary {
+body, button .btn-secondary {
     background-color: whitesmoke;
     font-family: "Noto Serif SC", serif, sans-serif;
 }
@@ -23,11 +23,10 @@ video {
     border: 1px solid black;
     background-color: #333;
     width: 100%;
-    height: 20px;
-    bottom: 0;
+    height: 40px;
+    /* bottom: 0; */
     margin: 0;
     padding: 0;
-
 }
 
 .modal {
@@ -40,4 +39,21 @@ video {
 
 .modal-header {
     border-bottom: none;
+}
+
+
+#static {
+    width: 90%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.owners a {
+    text-decoration: none;
+    color: #5e5e5e;
 }
