@@ -1,4 +1,4 @@
-body, button .btn-secondary {
+body {
     background-color: whitesmoke;
     font-family: "Noto Serif SC", serif, sans-serif;
 }
@@ -64,6 +64,38 @@ img {
     width: 300px;
     height: auto;
 }
+
+.clear {
+    clear: both;
+    float: none;
+    width: 100%;
+}
+
+.gallery {
+    font-family: "Noto Serif SC", serif, sans-serif;
+}
+
+.container .gallery a img {
+    float: left;
+    width: 20%;
+    height: auto;
+    border: 2px solid #fff;
+    -webkit-transition: -webkit-transform .15s ease;
+    -moz-transition: -moz-transform .15s ease;
+    -o-transition: -o-transform .15s ease;
+    -ms-transition: -ms-transform .15s ease;
+    transition: transform .15s ease;
+    position: relative;
+  }
+  /* line 46, ../sass/demo.scss */
+  .container .gallery a:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 5;
+  }
 
 .owners a {
     text-decoration: none;

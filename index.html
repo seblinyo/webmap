@@ -12,6 +12,7 @@
 
     <link href="assets/icon.png" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simplelightbox.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>SEBLINYO | Webmap</title>
@@ -27,11 +28,16 @@
       </div>
 
       <div class="col-4">
-        <div id="static">
-            <img src="pics/frame0.png">
+        <div class="gallery" id="static">
+            <a href="pics/frame0.png" class="big"><img src="pics/frame0.png" alt="" title="Sun angle 0" /></a>
+            <a href="pics/frame120.png" class="big"><img src="pics/frame120.png" alt="" title="Sun angle 120" /></a>
+            <a href="pics/frame240.png" class="big"><img src="pics/frame240.png" alt="" title="Sun angle 240" /></a>
+            <a href="pics/frame360.png" class="big"><img src="pics/frame360.png" alt="" title="Sun angle 360" /></a>
+            <div class="clear"></div>
+            <!-- <img src="pics/frame0.png">
             <img src="pics/frame120.png">
             <img src="pics/frame240.png">
-            <img src="pics/frame360.png">
+            <img src="pics/frame360.png"> -->
         </div>
       </div>
 
@@ -78,7 +84,54 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simple-lightbox.js"></script>
     <script src="scripts/main.js"></script>
+    <script>
+      $(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+    </script>
 </body>
 
 </html>
