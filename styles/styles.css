@@ -112,7 +112,7 @@ img {
 .grow-effect:hover,
 .grow-effect:focus,
 .grow-effect:active {
-    margin: 20px;
+    /* margin: 20px; */
     transform: scale(1.1);
 }
 
