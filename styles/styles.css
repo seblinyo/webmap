@@ -3,6 +3,7 @@ body {
     font-family: "Noto Serif SC", serif, sans-serif;
     overflow-x: hidden;
     /* overflow-y: hidden; */
+    scroll-behavior: smooth;
 }
 
 h1 {
