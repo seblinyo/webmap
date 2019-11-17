@@ -1,7 +1,7 @@
 body {
     background-color: whitesmoke;
     font-family: "Noto Serif SC", serif, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* overflow-y: hidden; */
 }
 
@@ -159,8 +159,8 @@ img {
 }
 
 .mover {
-    width: 650px;
-    height: 520px;
+    width: 640px;
+    height: 400px;
     background: url("../pics/sun.png") no-repeat;
     position: absolute;
     top: 25px;
