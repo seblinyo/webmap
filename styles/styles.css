@@ -98,7 +98,7 @@ img {
     z-index: 5;
 }
 
-.hvr-grow {
+.grow-effect {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -109,9 +109,10 @@ img {
     transition-property: transform;
 }
 
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
+.grow-effect:hover,
+.grow-effect:focus,
+.grow-effect:active {
+    margin: 20px;
     transform: scale(1.1);
 }
 
