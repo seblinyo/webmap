@@ -2,6 +2,7 @@ body {
     background-color: whitesmoke;
     font-family: "Noto Serif SC", serif, sans-serif;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 h1 {
@@ -76,6 +77,10 @@ img {
     font-family: "Noto Serif SC", serif, sans-serif;
 }
 
+.big {
+    margin-bottom: 5px;
+}
+
 .container .gallery a img {
     float: left;
     width: 20%;
@@ -98,6 +103,9 @@ img {
     z-index: 5;
 }
 
+
+/* Mouse position on image effect */
+
 .grow-effect {
     display: inline-block;
     vertical-align: middle;
@@ -116,8 +124,49 @@ img {
     transform: scale(1.1);
 }
 
+
+/* Mouse position on image effect */
+
 .owners,
 .owners a {
     text-decoration: none;
     color: #5e5e5e;
 }
+
+
+/* Sun animation */
+
+.mover {
+    motion-path: path("m 59.70563, 40.619202 c -37.18435,9.963515 -70.03811,35.173093 -89.286145,68.511668 -19.248034,33.33857 -24.653289,74.39555 -14.689774,111.5799 9.963515,37.18435 35.173089,70.03811 68.511669,89.28615 33.33857,19.24803 74.39555,24.65329 111.5799,14.68977 37.18435,-9.96352 70.03811,-35.17309 89.28614,-68.51167 19.24804,-33.33857 24.65329,-74.39555 14.68978,-111.5799 C 339.83368,130.41077 314.62411,97.557011 281.28553,78.308976 247.94696,59.060941 206.88998,53.655687 169.70563,63.619202 Z");
+    offset-path: path("m 169.70563,63.619202 c -37.18435,9.963515 -70.03811,35.173093 -89.286145,68.511668 -19.248034,33.33857 -24.653289,74.39555 -14.689774,111.5799 9.963515,37.18435 35.173089,70.03811 68.511669,89.28615 33.33857,19.24803 74.39555,24.65329 111.5799,14.68977 37.18435,-9.96352 70.03811,-35.17309 89.28614,-68.51167 19.24804,-33.33857 24.65329,-74.39555 14.68978,-111.5799 C 339.83368,130.41077 314.62411,97.557011 281.28553,78.308976 247.94696,59.060941 206.88998,53.655687 169.70563,63.619202 Z");
+    -webkit-animation: move 5s linear infinite;
+    animation: move 5s linear infinite;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes move {
+    100% {
+        motion-offset: 100%;
+        offset-distance: 100%;
+    }
+}
+
+@keyframes move {
+    100% {
+        motion-offset: 100%;
+        offset-distance: 100%;
+    }
+}
+
+.mover {
+    width: 650px;
+    height: 520px;
+    background: url("../pics/sun.png") no-repeat;
+    position: absolute;
+    top: 25px;
+    /* left: 300px; */
+    margin-left: 32%;
+}
+
+
+/* Sun animation */

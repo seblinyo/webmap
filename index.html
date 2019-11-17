@@ -17,47 +17,19 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>SEBLINYO | Webmap</title>
     <style>
-        .mover {
-            motion-path: path("m 169.70563,63.619202 c -37.18435,9.963515 -70.03811,35.173093 -89.286145,68.511668 -19.248034,33.33857 -24.653289,74.39555 -14.689774,111.5799 9.963515,37.18435 35.173089,70.03811 68.511669,89.28615 33.33857,19.24803 74.39555,24.65329 111.5799,14.68977 37.18435,-9.96352 70.03811,-35.17309 89.28614,-68.51167 19.24804,-33.33857 24.65329,-74.39555 14.68978,-111.5799 C 339.83368,130.41077 314.62411,97.557011 281.28553,78.308976 247.94696,59.060941 206.88998,53.655687 169.70563,63.619202 Z");
-            offset-path: path("m 169.70563,63.619202 c -37.18435,9.963515 -70.03811,35.173093 -89.286145,68.511668 -19.248034,33.33857 -24.653289,74.39555 -14.689774,111.5799 9.963515,37.18435 35.173089,70.03811 68.511669,89.28615 33.33857,19.24803 74.39555,24.65329 111.5799,14.68977 37.18435,-9.96352 70.03811,-35.17309 89.28614,-68.51167 19.24804,-33.33857 24.65329,-74.39555 14.68978,-111.5799 C 339.83368,130.41077 314.62411,97.557011 281.28553,78.308976 247.94696,59.060941 206.88998,53.655687 169.70563,63.619202 Z");
-            -webkit-animation: move 5s linear infinite;
-            animation: move 5s linear infinite;
-        }
-        
-        @-webkit-keyframes move {
-            100% {
-                motion-offset: 100%;
-                offset-distance: 100%;
-            }
-        }
-        
-        @keyframes move {
-            100% {
-                motion-offset: 100%;
-                offset-distance: 100%;
-            }
-        }
-        
-        .mover {
-            width: 700px;
-            height: 500px;
-            background: url(pics/sun.png) no-repeat;
-            position: absolute;
-            top: 20px;
-            left: 300px
-        }
+
     </style>
 </head>
 
-<body>
+<body class="h-100">
     <h1>Schladming, Austria</h1>
     <h6 class="text-center"> (FROM BRANDLWEG) </h6>
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-xl-9">
             <video width='640' height='460' autoplay loop muted>
-				<source src='output.mp4' type="video/mp4">
-			</video>
-            <div class="mover"></div>
+              <source src='output.mp4' type="video/mp4">
+            </video>
+            <div class="mover justify-content-center align-items-center"></div>
         </div>
 
         <div class="col-xl-3">
@@ -65,7 +37,7 @@
                 <a href="pics/frame0.png" class="big grow-effect"><img src="pics/frame0.png" alt="" title="Sun angle 0" /></a>
                 <a href="pics/frame120.png" class="big grow-effect"><img src="pics/frame120.png" alt="" title="Sun angle 120" /></a>
                 <a href="pics/frame240.png" class="big grow-effect"><img src="pics/frame240.png" alt="" title="Sun angle 240" /></a>
-                <a href="pics/frame360.png" class="big grow-effect"><img src="pics/frame360.png" alt="" title="Sun angle 360" /></a>
+                <!-- <a href="pics/frame360.png" class="big grow-effect"><img src="pics/frame360.png" alt="" title="Sun angle 360" /></a> -->
                 <div class="clear"></div>
             </div>
         </div>
@@ -86,13 +58,13 @@
         </div>
       </footer> -->
 
-        <div id="footer">
+        <footer class="footer fixed-bottom" id="footer">
             <h6 class="owners text-center">
                 <a href='https://sebastian-ch.github.io/' target="_blank">Sebastian</a>,
                 <a href='https://zhulin96.github.io/' target="_blank"> Lin </a> &amp;
                 <a href='https://bayoishola20.github.io/' target="_blank"> Adebayo </a> &copy; 2019
             </h6>
-        </div>
+        </footer>
 
         <!-- Modal -->
         <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalTitle" aria-hidden="true">
