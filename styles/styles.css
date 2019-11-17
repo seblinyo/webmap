@@ -1,6 +1,7 @@
 body {
     background-color: whitesmoke;
     font-family: "Noto Serif SC", serif, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
